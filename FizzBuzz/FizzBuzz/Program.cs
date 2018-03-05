@@ -13,8 +13,24 @@ namespace FizzBuzz
             int i;
             for(i=1; i <= 100; i++)
             {
-                System.Console.WriteLine(i);
-            }
+                
+                if(i%3==0 && i % 5 == 0)
+                {
+                    System.Console.WriteLine("Fizzbuzz");
+                }
+                else if (i % 3 == 0)
+                {
+                    System.Console.WriteLine("Fizz");
+                }
+                else if (i % 5 == 0)
+                {
+                    System.Console.WriteLine("Buzz");
+                }
+                else
+                {
+                    System.Console.WriteLine(i);
+                }
+            }   
             System.Console.ReadLine();
         }
     }
